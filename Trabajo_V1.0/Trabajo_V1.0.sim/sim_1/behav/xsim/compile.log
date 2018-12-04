@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Documents/JULIA/EE403/SED/Trabajo/MaquinaDeEstados/MaquinaDeEstados.srcs/sources_1/new/MaquinaDeEstados.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MaquinaDeEstados
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Documents/JULIA/EE403/SED/Trabajo/MaquinaDeEstados/MaquinaDeEstados.srcs/sim_1/new/MaquinaDeEstados_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MaquinaDeEstados_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Documents/JULIA/EE403/SED/Trabajo/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/imports/new/Display_refresh.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display_refresh

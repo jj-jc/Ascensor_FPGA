@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a4e2b5b428884809bed3541c44e06338 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MaquinaDeEstados_tb_behav xil_defaultlib.MaquinaDeEstados_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_refresh_tb_behav xil_defaultlib.Display_refresh_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,10 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.MaquinaDeEstados [maquinadeestados_default]
-Compiling architecture behavioral of entity xil_defaultlib.maquinadeestados_tb
-Built simulation snapshot MaquinaDeEstados_tb_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Divisor [divisor_default]
+Compiling architecture behavioral of entity xil_defaultlib.Display_refresh [display_refresh_default]
+Compiling architecture behavioral of entity xil_defaultlib.display_refresh_tb
+Built simulation snapshot Display_refresh_tb_behav
