@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 08.11.2018 16:36:56
+-- Create Date: 11.12.2018 11:41:05
 -- Design Name: 
--- Module Name: divisor - Behavioral
+-- Module Name: Cafetera - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,35 +31,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity fdivider is
-generic (
-MODULE: positive := 100000
-);
-port (
-RESET : in std_logic;
-CLK : in std_logic;
-CE_OUT: out std_logic
-);
-end fdivider;
+entity Cafetera is
+    Port ( clk : in STD_LOGIC);
+end Cafetera;
 
-architecture behavioral of fdivider is
+architecture Behavioral of Cafetera is
+
 begin
-process (RESET, CLK)
-subtype count_range is integer range 0 to
-module - 1;
-variable count: count_range;
-begin
-if RESET = '1' then
-count := count_range'high;
-CE_OUT <= '0';
-elsif rising_edge(CLK) then
-CE_OUT <= '0';
-if count /= 0 then
-count := count - 1;
-else
-CE_OUT <= '1';
-count := count_range'high;
-end if;
-end if;
-end process;
-end behavioral;
+
+
+end Behavioral;

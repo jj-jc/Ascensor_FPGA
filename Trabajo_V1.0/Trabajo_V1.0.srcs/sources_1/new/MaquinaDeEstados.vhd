@@ -1,6 +1,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+
 entity MaquinaDeEstados is
     Port(
         Reset, Clk, Corto, Largo, Encendido : in std_logic;

@@ -40,51 +40,72 @@ generic ( width: positive:=7 );
     clk :in std_logic;
     reset:in std_logic;
     Segment_unid: in std_logic_vector (width-1 downto 0);--unidades
-    Segment_dec: in std_logic_vector (width-1 downto 0);--decenas
+    --Segment_dec: in std_logic_vector (width-1 downto 0);--decenas
     display_number: out std_logic_vector (width-1 downto 0);--numero
-    display_selection: out std_logic_vector (3 downto 0)--selección del display.  
-);
+    display_selection: out std_logic_vector (7 downto 0)--selección del display.
+    );
 end Display_refresh;
 
 architecture Behavioral of Display_refresh is
 SIGNAL reloj:STD_LOGIC;
 --signal S_display_selection: std_logic_vector (3 downto 0):="0001";
 signal display_actual: unsigned(1 downto 0):="00";
-COMPONENT divisor IS
+signal decenas:std_logic_vector(6 downto 0):="1001100";
+--signal unidades:std_logic_vector(6 downto 0):="0010010";
+COMPONENT fdivider IS
 Port (     clk : in STD_LOGIC;
            reset : in STD_LOGIC;
-           clk_out : out STD_LOGIC);
+           ce_out : out STD_LOGIC);
 END COMPONENT;
 
 begin
-div: divisor PORT MAP(
+div: fdivider PORT MAP(
 clk=>clk,
 reset=>reset,
-clk_out=>reloj
+CE_out=>reloj
 );
+
 --display_selection <= S_display_selection;
-  process(reloj, reset)--capturamos los flancos y aumentamos en uno el display
-    begin
+  process(reloj,reset)--capturamos los flancos y aumentamos en uno el display --Falta reset
+    begin   
     if reset= '1' then
-        display_selection <= (others =>'0');
+        display_selection <= (others =>'1');
+        display_actual<="00";
+        display_number<="1111110";        
     elsif (reloj'event and reloj='1') then
-        display_actual <= display_actual + 1;
-        case display_actual is 
-              when "00"=>
-              display_selection <= "0001";
-              display_number <= Segment_unid;
-              when "01"=>
-              display_selection <= "0010";
-              display_number <= Segment_dec;
-              when "10"=>
-              display_selection <= "0100";
-              display_number <= (others =>'0');
-              when "11"=>
-              display_selection <= "1000";
-              display_number <= (others =>'0');
-              when others=> 
-              display_selection<= "0001";
-              end case;
-    end if;   
+    if display_actual ="00" then 
+               display_selection <= "11111110";
+    --              --display_number <= Segment_unid;
+                 display_number <= segment_unid;
+     elsif display_actual ="01" then 
+                display_selection <= "11111101";
+     --              --display_number <= Segment_unid;
+                  display_number <= decenas;
+     else 
+                display_selection <= "11110111";
+                display_number <= (others =>'1');
+     end if;
+                  
+--        case display_actual is 
+--              when "00"=>
+--              display_selection <= "1110";
+--              --display_number <= Segment_unid;
+--              display_number <= unidades;
+--              when "01"=>
+--              display_selection <= "1101";
+--              --display_number <= Segment_dec;
+--              display_number <= decenas;
+--              when "10"=>
+--              display_selection <= "1011";        
+--              display_number <= (others =>'1');
+--              when "11"=>
+--              display_selection <= "0111";
+--              display_number <= (others =>'1');
+----              when others=> 
+----              display_selection<= "0001";
+----              display_number <= (others =>'1');
+--              end case;
+              display_actual <= display_actual + 1;
+    end if;    
   end process;
 end behavioral;

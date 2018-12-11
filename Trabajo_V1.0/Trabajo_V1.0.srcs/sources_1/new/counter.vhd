@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 08.11.2018 16:36:56
+-- Create Date: 11.12.2018 11:47:40
 -- Design Name: 
--- Module Name: divisor - Behavioral
+-- Module Name: counter - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -17,10 +17,10 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -31,35 +31,43 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity fdivider is
+entity counter is
 generic (
-MODULE: positive := 100000
+WIDTH: positive := 4
 );
 port (
-RESET : in std_logic;
+CLR : in std_logic;
 CLK : in std_logic;
-CE_OUT: out std_logic
+UP : in std_logic;
+CE_N : in std_logic;
+LOAD_N: in std_logic;
+J : in std_logic_vector (WIDTH - 1 downto 0);
+ZERO_N: out std_logic;
+Q : out std_logic_vector (WIDTH - 1 downto 0)
 );
-end fdivider;
+end counter;
 
-architecture behavioral of fdivider is
+architecture behavioral of counter is
+signal q_i: unsigned(Q'range);
 begin
-process (RESET, CLK)
-subtype count_range is integer range 0 to
-module - 1;
-variable count: count_range;
+process (CLR, CLK, LOAD_N, J)
 begin
-if RESET = '1' then
-count := count_range'high;
-CE_OUT <= '0';
+if CLR = '1' then
+q_i <= (others => '0');
+elsif LOAD_N = '0' then
+q_i <= unsigned(J);
 elsif rising_edge(CLK) then
-CE_OUT <= '0';
-if count /= 0 then
-count := count - 1;
+if CE_N = '0' then
+if UP = '1' then
+q_i <= q_i + 1;
 else
-CE_OUT <= '1';
-count := count_range'high;
+q_i <= q_i - 1;
+end if;
 end if;
 end if;
 end process;
+Q <= std_logic_vector(q_i);
+ZERO_N <= '0' when q_i = 0 else '1';
 end behavioral;
+
+
