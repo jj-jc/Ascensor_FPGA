@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Documents/JULIA/EE403/SED/Trabajo/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/imports/new/Display_refresh.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Display_refresh
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto

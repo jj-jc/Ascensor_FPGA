@@ -51,23 +51,23 @@ architecture behavioral of counter is
 signal q_i: unsigned(Q'range);
 begin
 process (CLR, CLK, LOAD_N, J)
-begin
-if CLR = '1' then
-q_i <= (others => '0');
-elsif LOAD_N = '0' then
-q_i <= unsigned(J);
-elsif rising_edge(CLK) then
-if CE_N = '0' then
-if UP = '1' then
-q_i <= q_i + 1;
-else
-q_i <= q_i - 1;
-end if;
-end if;
-end if;
-end process;
-Q <= std_logic_vector(q_i);
-ZERO_N <= '0' when q_i = 0 else '1';
+    begin
+        if CLR = '1' then
+            q_i <= (others => '0');
+    elsif LOAD_N = '0' then
+        q_i <= unsigned(J);
+    elsif rising_edge(CLK) then
+    if CE_N = '0' then
+    if UP = '1' then
+        q_i <= q_i + 1;
+    else
+         q_i <= q_i - 1;
+    end if;
+    end if;
+    end if;
+    end process;
+    Q <= std_logic_vector(q_i);
+    ZERO_N <= '0' when q_i = 0 else '1';
 end behavioral;
 
 

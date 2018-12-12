@@ -3,6 +3,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity MaquinaDeEstados is
+
     Port(
         Reset, Clk, Corto, Largo, Encendido : in std_logic;
         Bomba_Led, Indica_On : out std_logic;
@@ -11,6 +12,8 @@ entity MaquinaDeEstados is
 end MaquinaDeEstados;
 
 architecture Behavioral of MaquinaDeEstados is
+    constant tiempo_C: positive:=20;
+    constant tiempo_L: positive:=30;
     type estado is (S0_OFF, S1_ON, S2_CORTO, S3_LARGO);
     signal state_register: estado;
     signal next_state: estado;

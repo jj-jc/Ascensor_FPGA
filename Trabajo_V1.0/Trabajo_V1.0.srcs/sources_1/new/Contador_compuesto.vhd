@@ -41,7 +41,7 @@ generic (
         CE_N : in std_logic;
         LOAD_N: in std_logic;
         J_dec: in std_logic_vector (WIDTH - 1 downto 0);
-        J_unid: inout std_logic_vector (WIDTH - 1 downto 0);
+        J_unid: in std_logic_vector (WIDTH - 1 downto 0);
         ZERO_N: out std_logic;
         Q_unid : out std_logic_vector (WIDTH - 1 downto 0);
         Q_dec : out std_logic_vector (WIDTH - 1 downto 0)       
@@ -64,15 +64,18 @@ END COMPONENT;
 
 Signal ZERO_N_unid_INT: std_logic;
 Signal ZERO_N_dec_INT: std_logic;
+Signal Load_int:std_logic;
+Signal J_unid_in:std_logic_vector (WIDTH - 1 downto 0);
 
 begin
+
 count_unid: counter PORT MAP(
   CLR=>CLR,
   CLK=>CLK,
   UP=>UP,
   CE_N=>CE_N,
-  LOAD_N=>LOAD_N,
-  J=>J_unid,
+  LOAD_N=>load_int,
+  J=>J_unid_in,
   ZERO_N=>ZERO_N_unid_INT,
   Q=>Q_unid
 
@@ -87,12 +90,22 @@ count_dece: counter PORT MAP(
   ZERO_N=>ZERO_N_dec_INT,
   Q=>Q_dec
 );
-ZERO_N <= '0' when (ZERO_N_unid_INT or ZERO_N_dec_INT)='0' 
+
+ZERO_N <= '0' when (ZERO_N_unid_INT ='0' and ZERO_N_dec_INT='0') 
             else '1';
 process(ZERO_N_unid_INT)
 begin
 if ZERO_N_unid_INT='0' and ZERO_N_dec_INT='1'then 
-    J_unid<="1001";--le cargamos un 9 para que vuelva a hacer la resta de las unidades
+    load_int<='1';
+   J_unid_in<="1001";--le cargamos un 9 para que vuelva a hacer la resta de las unidades
 end if;
+load_int<='0';
 end process;
+process(load_N)
+begin
+    if(load_N'event and load_N='0') then
+    J_unid_in<=J_unid;
+    load_int<=load_N;
+    end if;
+    end process;
 end Behavioral;
