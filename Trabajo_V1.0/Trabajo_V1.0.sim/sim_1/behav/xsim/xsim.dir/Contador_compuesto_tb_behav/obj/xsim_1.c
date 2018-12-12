@@ -44,30 +44,28 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
+extern void execute_40(char*, char *);
 extern void execute_41(char*, char *);
 extern void execute_42(char*, char *);
 extern void execute_43(char*, char *);
 extern void execute_44(char*, char *);
 extern void execute_45(char*, char *);
 extern void execute_46(char*, char *);
-extern void execute_47(char*, char *);
 extern void execute_38(char*, char *);
 extern void execute_39(char*, char *);
-extern void execute_40(char*, char *);
 extern void execute_31(char*, char *);
 extern void execute_32(char*, char *);
 extern void execute_33(char*, char *);
 extern void transaction_1(char*, char*, unsigned, unsigned, unsigned);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-extern void transaction_4(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[16] = {(funcp)execute_41, (funcp)execute_42, (funcp)execute_43, (funcp)execute_44, (funcp)execute_45, (funcp)execute_46, (funcp)execute_47, (funcp)execute_38, (funcp)execute_39, (funcp)execute_40, (funcp)execute_31, (funcp)execute_32, (funcp)execute_33, (funcp)transaction_1, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_4};
-const int NumRelocateId= 16;
+funcp funcTab[14] = {(funcp)execute_40, (funcp)execute_41, (funcp)execute_42, (funcp)execute_43, (funcp)execute_44, (funcp)execute_45, (funcp)execute_46, (funcp)execute_38, (funcp)execute_39, (funcp)execute_31, (funcp)execute_32, (funcp)execute_33, (funcp)transaction_1, (funcp)vhdl_transfunc_eventcallback};
+const int NumRelocateId= 14;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/Contador_compuesto_tb_behav/xsim.reloc",  (void **)funcTab, 16);
-	iki_vhdl_file_variable_register(dp + 5456);
-	iki_vhdl_file_variable_register(dp + 5512);
+	iki_relocate(dp, "xsim.dir/Contador_compuesto_tb_behav/xsim.reloc",  (void **)funcTab, 14);
+	iki_vhdl_file_variable_register(dp + 5184);
+	iki_vhdl_file_variable_register(dp + 5240);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
