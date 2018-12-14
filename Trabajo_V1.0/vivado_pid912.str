@@ -1,0 +1,101 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 912
+License: Customer
+
+Current time: 	Tue Dec 11 18:44:29 CET 2018
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 763 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	juanj
+User home directory: C:/Users/juanj
+User working directory: F:/tonto/Trabajo_V1.0
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/juanj/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/juanj/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/juanj/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/tonto/Trabajo_V1.0/vivado.log
+Vivado journal file location: 	F:/tonto/Trabajo_V1.0/vivado.jou
+Engine tmp dir: 	F:/tonto/Trabajo_V1.0/.Xil/Vivado-912-DESKTOP-93S45MA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	213 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 458 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 59 MB (+59810kb) [00:00:13]
+// [Engine Memory]: 456 MB (+326314kb) [00:00:13]
+// Opening Vivado Project: F:\tonto\Trabajo_V1.0\Trabajo_V1.0.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// Tcl Message: open_project F:/tonto/Trabajo_V1.0/Trabajo_V1.0.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 478 MB. GUI used memory: 37 MB. Current time: 12/11/18 6:44:31 PM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/tonto/Trabajo_V1.0/Trabajo_V1.0.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/user/Documents/JULIA/EE403/SED/Trabajo/Trabajo_V1.0' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 487 MB (+8680kb) [00:00:23]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 585 MB (+77030kb) [00:00:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 590 MB. GUI used memory: 39 MB. Current time: 12/11/18 6:44:51 PM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 824.449 ; gain = 112.852 
+// Project name: Trabajo_V1.0; location: F:/tonto/Trabajo_V1.0; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Mostrar_tiempo.vhd) elapsed time: 0.3s
+// Elapsed time: 67 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mostrar_tiempo(Behavioral) (Mostrar_tiempo.vhd)]", 1, true); // B (D, ck) - Node
+// [GUI Memory]: 63 MB (+905kb) [00:04:55]

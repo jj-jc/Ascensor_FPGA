@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 11 23:03:44 2018
+# Process ID: 9088
+# Current directory: C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6392 C:\Users\juanj\OneDrive - Universidad Politécnica de Madrid\CUARTO\Sistemas Electronicos Digitales\Trabajo VHDL\tonto\Trabajo_V1.0\Trabajo_V1.0.xpr
+# Log file: C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/vivado.log
+# Journal file: C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.xpr}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd}}
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Contador_compuesto_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source Contador_compuesto_tb.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+close_sim
+launch_simulation
+source Contador_compuesto_tb.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+close_sim

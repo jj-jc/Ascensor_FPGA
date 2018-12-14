@@ -31,30 +31,35 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Divisor is
-    GENERIC(frec: integer:= 10);
-    Port ( clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           clk_out : out STD_LOGIC);
-end Divisor;
+entity fdivider is
+generic (
+MODULE: positive := 100000
+);
+port (
+RESET : in std_logic;
+CLK : in std_logic;
+CE_OUT: out std_logic
+);
+end fdivider;
 
-architecture Behavioral of Divisor is
+architecture behavioral of fdivider is
 begin
-PROCESS(clk, reset) is
-variable cuenta:integer:= 0;
-variable reloj:STD_LOGIC:='0';
+process (RESET, CLK)
+subtype count_range is integer range 0 to
+module - 1;
+variable count: count_range;
 begin
-if reset='1' and reset'event then 
-cuenta:=0;
+if RESET = '1' then
+count := count_range'high;
+CE_OUT <= '0';
+elsif rising_edge(CLK) then
+CE_OUT <= '0';
+if count /= 0 then
+count := count - 1;
+else
+CE_OUT <= '1';
+count := count_range'high;
 end if;
-if(clk'event and clk='1') then
-    if(cuenta<frec-1) then
-    cuenta:=cuenta+1; 
-    else
-     reloj:=not reloj;
-     cuenta:=0;
-    end if;        
 end if;
-clk_out<=reloj; 
 end process;
-end Behavioral;
+end behavioral;

@@ -36,18 +36,18 @@ entity divisor_tb is
 end divisor_tb;
 
 architecture Behavioral of divisor_tb is
-COMPONENT divisor IS
+COMPONENT fdivider IS
      Port ( clk : in STD_LOGIC;
            reset : in STD_LOGIC;
-           clk_out : out STD_LOGIC);
+           ce_out : out STD_LOGIC);
 END COMPONENT;
 SIGNAL clk_int:STD_LOGIC:='0';
 SIGNAL reset_int,clk_out_int: STD_LOGIC;
 begin
-div: divisor PORT MAP(
+div: fdivider PORT MAP(
 clk=>clk_int,
 reset=>reset_int,
-clk_out=>clk_out_int);
+ce_out=>clk_out_int);
 reset_int<='0';
 clk_int<=not clk_int after 10 ns;
 end Behavioral;

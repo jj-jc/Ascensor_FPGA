@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 11 18:44:02 2018
+# Process ID: 912
+# Current directory: F:/tonto/Trabajo_V1.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5484 F:\tonto\Trabajo_V1.0\Trabajo_V1.0.xpr
+# Log file: F:/tonto/Trabajo_V1.0/vivado.log
+# Journal file: F:/tonto/Trabajo_V1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/tonto/Trabajo_V1.0/Trabajo_V1.0.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/user/Documents/JULIA/EE403/SED/Trabajo/Trabajo_V1.0' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 824.449 ; gain = 112.852
+update_compile_order -fileset sources_1
