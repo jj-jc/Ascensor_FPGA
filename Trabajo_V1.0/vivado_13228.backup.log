@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 14 13:33:31 2018
+# Process ID: 13228
+# Current directory: C:/Users/user/Desktop/Prueba
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9808 C:\Users\user\Desktop\Prueba\Trabajo_V1.0.xpr
+# Log file: C:/Users/user/Desktop/Prueba/vivado.log
+# Journal file: C:/Users/user/Desktop/Prueba\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/Prueba/Trabajo_V1.0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 793.199 ; gain = 65.848
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+C:/Xilinx/Vivado/2018.2/tps/mingw/6.2.0/win64.o/nt/bin/../lib/gcc/x86_64-w64-mingw32/6.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file xsim.dir/Contador_compuesto_tb_behav/xsimk.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s) while executing 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim/elaborate.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 812.707 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Desktop/Prueba/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
