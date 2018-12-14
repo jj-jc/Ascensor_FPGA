@@ -1,7 +1,7 @@
-Running: xsim.dir/Contador_compuesto_tb_behav/xsimk.exe -simmode gui -wdb Contador_compuesto_tb_behav.wdb -simrunnum 0 -socket 50465
+Running: xsim.dir/Contador_compuesto_tb_behav/xsimk.exe -simmode gui -wdb Contador_compuesto_tb_behav.wdb -simrunnum 0 -socket 51741
 Design successfully loaded
-Design Loading Memory Usage: 4844 KB (Peak: 4844 KB)
-Design Loading CPU Usage: 31 ms
+Design Loading Memory Usage: 4912 KB (Peak: 4912 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 5540 KB (Peak: 5540 KB)
-Simulation CPU Usage: 78 ms
+Simulation Memory Usage: 5312 KB (Peak: 5312 KB)
+Simulation CPU Usage: 46 ms

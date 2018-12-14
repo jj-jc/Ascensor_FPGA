@@ -32,15 +32,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Mostrar_tiempo is
-    generic(width_t: positive:=10);
+    generic(width_t: positive:=8);
     Port ( 
            Reset: in STD_LOGIC;
-           CLK : in STD_LOGIC;
+           CLK_master: in STD_LOGIC;
            LOAD_N: in std_logic;
-           J: in STD_LOGIC_VECTOR (width_t-1 downto 0);
+           unidades: in STD_LOGIC_VECTOR (3 downto 0);
+           decenas: in STD_LOGIC_VECTOR (3 downto 0);
            display_number: out std_logic_vector (6 downto 0);--numero
            display_selection: out std_logic_vector (7 downto 0);--selección del display.
-           ZERO_N : out STD_LOGIC
+           ZERO_N: out STD_LOGIC
            );
 end Mostrar_tiempo;
 architecture Behavioral of Mostrar_tiempo is
@@ -50,13 +51,6 @@ COMPONENT fdivider IS
            reset : in STD_LOGIC;
            ce_out : out STD_LOGIC);
 END COMPONENT;
-COMPONENT Num_un_dec IS
-   generic (width: positive);
-    Port ( clk:STD_LOGIC;    
-          numero : in STD_LOGIC_VECTOR (width-1 downto 0);
-          unidades : out STD_LOGIC_VECTOR (3 downto 0);
-          decenas : out STD_LOGIC_VECTOR (3 downto 0));
- END COMPONENT;        
 COMPONENT Contador_compuesto IS
     generic ( WIDTH: positive := 4);
     port ( CLR : in std_logic;
@@ -76,38 +70,36 @@ COMPONENT Decoder IS
     led : OUT std_logic_vector(6 DOWNTO 0));
 END COMPONENT;
 COMPONENT Display_refresh IS
-        generic ( width: positive:=7 );
+        generic ( width_7: positive:=7 );
 Port(
 --SE UTILIZARA UN DIVISOR DE FRECUENCIA TENDRA QUE ESTAR ENTRE 1ms y 16ms
 --Este será de 1000Hz para tener 1ms 
 --Como la nexsys es de 100MHz hay que dividir entre 100000
 clk :in std_logic;
 reset:in std_logic;
-Segment_unid: in std_logic_vector (width-1 downto 0);--unidades
-Segment_dec: in std_logic_vector (width-1 downto 0);--decenas
-display_number: out std_logic_vector (width-1 downto 0);--numero
+Segment_unid: in std_logic_vector (width_7-1 downto 0);--unidades
+Segment_dec: in std_logic_vector (width_7-1 downto 0);--decenas
+display_number: out std_logic_vector (width_7-1 downto 0);--numero
 display_selection: out std_logic_vector (7 downto 0)--selección del display.
 );
 END COMPONENT;
 SIGNAL clk_1s:std_logic;
 SIGNAL clk_1ms:std_logic;
-SIGNAL unidades:std_logic_vector (3 downto 0);
-SIGNAL decenas:std_logic_vector (3 downto 0);
 SIGNAL Q_unidades:std_logic_vector (3 downto 0);
 SIGNAL Q_decenas:std_logic_vector (3 downto 0);
 SIGNAL BCD_unidades:std_logic_vector (6 downto 0);
 SIGNAL BCD_decenas:std_logic_vector (6 downto 0);
 begin
  clk1s: fdivider 
-        GENERIC MAP( module=>10000000)
+        GENERIC MAP( module=>100000000)
         PORT MAP(
-            clk=>clk,
+            clk=>CLK_master,
             reset=>reset,
             ce_out=>clk_1s);
  clk1ms: fdivider 
         GENERIC MAP( module=>100000)
         PORT MAP(
-             clk=>clk,
+             clk=>CLK_master,
              reset=>reset,
              ce_out=>clk_1ms);           
  cont: Contador_compuesto
@@ -121,14 +113,8 @@ begin
             J_unid=>unidades,
             ZERO_N=>ZERO_N,
             Q_unid=>Q_unidades,
-            Q_dec=>Q_decenas);      
-  nd:Num_un_dec 
-        GENERIC MAP(width=>8)
-        PORT MAP(
-            clk=>clk,
-            numero=>J,
-            unidades=>unidades,
-            decenas=>decenas);
+            Q_dec=>Q_decenas);    
+
  decunid:Decoder
         PORT MAP(
             code=>Q_unidades,

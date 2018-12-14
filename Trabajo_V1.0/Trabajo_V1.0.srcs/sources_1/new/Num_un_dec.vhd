@@ -32,9 +32,9 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity Num_un_dec is
-    generic (WIDTH: positive := 10);
-    Port ( clk:STD_LOGIC;
-           numero : in STD_LOGIC_VECTOR (width-1 downto 0);
+    generic (width: positive := 8);
+    Port ( clk: in STD_LOGIC;
+           numero : in STD_LOGIC_VECTOR(width-1 downto 0);
            unidades : out STD_LOGIC_VECTOR (3 downto 0);
            decenas : out STD_LOGIC_VECTOR (3 downto 0));
 end Num_un_dec;
@@ -43,9 +43,9 @@ architecture Behavioral of Num_un_dec is
 signal numero_int: integer range 0 to 99;
 begin
 numero_int<=to_integer(unsigned(numero));
-process(clk)
+process
 begin 
-decenas<=std_logic_vector(to_unsigned(numero_int/10,4));
-unidades<=std_logic_vector(to_unsigned(numero_int mod 10,4));
+decenas<=std_logic_vector(to_unsigned(numero_int/8,4));
+unidades<=std_logic_vector(to_unsigned(numero_int mod 8,4));
 end process;
 end Behavioral;

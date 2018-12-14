@@ -90,17 +90,19 @@ count_dece: counter PORT MAP(
 );
 ZERO_N <= '0' when (ZERO_N_unid_INT ='0' and ZERO_N_dec_INT='0') 
               else '1';
-process(clk)
+process(clk,load_N,J_unid)
 begin
-if(rising_edge(clk)) then
 if (load_N='0') then
     load_int<='0'; 
     J_unid_in<=J_unid; 
-elsif (ZERO_N_unid_INT='0' and ZERO_N_dec_INT='1' and load_int='1') then     
+else 
+    load_int<='1';
+end if;
+if(rising_edge(clk)) then
+if (ZERO_N_unid_INT='0' and ZERO_N_dec_INT='1' and load_int='1') then     
     J_unid_in<="1001";
     load_int<='0';--le cargamos un 9 para que vuelva a hacer la resta de las unidades
-end if;
-else load_int<='1';
+end if; 
 end if;
 end process;
 end Behavioral;
