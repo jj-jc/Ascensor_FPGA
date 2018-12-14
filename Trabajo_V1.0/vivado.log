@@ -2,21 +2,23 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Dec 14 21:57:32 2018
-# Process ID: 11644
+# Start of session at: Fri Dec 14 20:19:26 2018
+# Process ID: 13884
 # Current directory: C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11640 C:\Users\juanj\Desktop\REPOSITORIO SED\Trabajo_V1.0\Trabajo_V1.0.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10552 C:\Users\juanj\Desktop\REPOSITORIO SED\Trabajo_V1.0\Trabajo_V1.0.xpr
 # Log file: C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/vivado.log
 # Journal file: C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/user/Documents/JULIA/EE403/SED/Trabajogit/trabajosed/Trabajo_V1.0' since last save.
 Scanning sources...
 Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/../OneDrive - Universidad Politcnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.ip_user_files', nor could it be found using path 'C:/Users/user/Documents/OneDrive - Universidad Politcnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 806.063 ; gain = 97.070
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 825.066 ; gain = 116.258
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 14 21:59:04 2018...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 14 20:20:36 2018...

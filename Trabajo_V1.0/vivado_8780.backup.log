@@ -1,0 +1,1264 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Dec 12 10:12:37 2018
+# Process ID: 8780
+# Current directory: C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2680 C:\Users\juanj\OneDrive - Universidad Politécnica de Madrid\CUARTO\Sistemas Electronicos Digitales\Trabajo VHDL\tonto\Trabajo_V1.0\Trabajo_V1.0.xpr
+# Log file: C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/vivado.log
+# Journal file: C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 719.789 ; gain = 73.242
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 764.434 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 771.707 ; gain = 7.273
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 784.309 ; gain = 5.059
+run 10 ns
+run all
+run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:43 . Memory (MB): peak = 787.453 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 787.551 ; gain = 0.098
+set_property top Contador_compuesto [current_fileset]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/counter.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/counter.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:]
+set_property ip.user_files_dir {C:/Users/juanj/OneDrive - Universidad Politcnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.ip_user_files} [current_project]
+update_ip_catalog
+run all
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 804.797 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 890.973 ; gain = 3.242
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 892.430 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 892.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 892.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 893.926 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 896.020 ; gain = 2.094
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 897.723 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 897.762 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 898.094 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 898.383 ; gain = 0.289
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 899.492 ; gain = 0.117
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 902.539 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 902.617 ; gain = 0.078
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 905.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 905.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 905.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal j_unid [C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd:67]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 905.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 906.270 ; gain = 0.434
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sim_1/new/Contador_compuesto_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 908.074 ; gain = 1.191
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Contador_compuesto_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Contador_compuesto_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/Contador_compuesto.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Contador_compuesto
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5f5ce1c89c32438aad9e4733555ce9f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Contador_compuesto_tb_behav xil_defaultlib.Contador_compuesto_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_compuesto [contador_compuesto_default]
+Compiling architecture behavioral of entity xil_defaultlib.contador_compuesto_tb
+Built simulation snapshot Contador_compuesto_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/juanj/OneDrive - Universidad Politécnica de Madrid/CUARTO/Sistemas Electronicos Digitales/Trabajo VHDL/tonto/Trabajo_V1.0/Trabajo_V1.0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Contador_compuesto_tb_behav -key {Behavioral:sim_1:Functional:Contador_compuesto_tb} -tclbatch {Contador_compuesto_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Contador_compuesto_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Contador_compuesto_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 913.949 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 12 11:48:05 2018...

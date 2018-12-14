@@ -32,7 +32,7 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity Display_refresh is
-generic ( width: positive:=7 );
+    generic ( width: positive:=7 );
     Port(
     --SE UTILIZARA UN DIVISOR DE FRECUENCIA TENDRA QUE ESTAR ENTRE 1ms y 16ms
     --Este será de 1000Hz para tener 1ms 
@@ -42,49 +42,38 @@ generic ( width: positive:=7 );
     Segment_unid: in std_logic_vector (width-1 downto 0);--unidades
     Segment_dec: in std_logic_vector (width-1 downto 0);--decenas
     display_number: out std_logic_vector (width-1 downto 0);--numero
-    display_selection: out std_logic_vector (3 downto 0)--selección del display.  
-);
+    display_selection: out std_logic_vector (7 downto 0)--selección del display.
+    );
 end Display_refresh;
 
 architecture Behavioral of Display_refresh is
 SIGNAL reloj:STD_LOGIC;
 --signal S_display_selection: std_logic_vector (3 downto 0):="0001";
 signal display_actual: unsigned(1 downto 0):="00";
-COMPONENT divisor IS
-Port (     clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           clk_out : out STD_LOGIC);
-END COMPONENT;
-
+signal decenas:std_logic_vector(6 downto 0):="1001100";
+--signal unidades:std_logic_vector(6 downto 0):="0010010";
 begin
-div: divisor PORT MAP(
-clk=>clk,
-reset=>reset,
-clk_out=>reloj
-);
 --display_selection <= S_display_selection;
-  process(reloj, reset)--capturamos los flancos y aumentamos en uno el display
-    begin
+  process(clk,reset)--capturamos los flancos y aumentamos en uno el display --Falta reset
+    begin   
     if reset= '1' then
-        display_selection <= (others =>'0');
-    elsif (reloj'event and reloj='1') then
-        display_actual <= display_actual + 1;
-        case display_actual is 
-              when "00"=>
-              display_selection <= "0001";
-              display_number <= Segment_unid;
-              when "01"=>
-              display_selection <= "0010";
-              display_number <= Segment_dec;
-              when "10"=>
-              display_selection <= "0100";
-              display_number <= (others =>'0');
-              when "11"=>
-              display_selection <= "1000";
-              display_number <= (others =>'0');
-              when others=> 
-              display_selection<= "0001";
-              end case;
-    end if;   
+        display_selection <= (others =>'1');
+        display_actual<="00";
+        display_number<="1111110";        
+    elsif (clk'event and clk='1') then
+    if display_actual ="00" then 
+               display_selection <= "11111110";
+    --              --display_number <= Segment_unid;
+                 display_number <= segment_unid;
+     elsif display_actual ="01" then 
+                display_selection <= "11111101";
+     --              --display_number <= Segment_unid;
+                  display_number <= decenas;
+     else 
+                display_selection <= "11110111";
+                display_number <= (others =>'1');
+     end if;                
+     display_actual <= display_actual + 1;
+    end if;    
   end process;
 end behavioral;
