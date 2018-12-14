@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log Display_refresh.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Display_refresh.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Display_refresh.tcl -notrace
+Command: synth_design -top Display_refresh -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14112 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 371.727 ; gain = 98.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Display_refresh' [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/imports/new/Display_refresh.vhd:49]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Divisor' declared at 'C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/divisor.vhd:34' bound to instance 'div' of component 'divisor' [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/imports/new/Display_refresh.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'Divisor' [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/divisor.vhd:41]
+	Parameter frec bound to: 10 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cuenta_reg was removed.  [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/divisor.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'Divisor' (1#1) [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/new/divisor.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/imports/new/Display_refresh.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'Display_refresh' (2#1) [C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.srcs/sources_1/imports/new/Display_refresh.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 426.719 ; gain = 153.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 426.719 ; gain = 153.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 426.719 ; gain = 153.527
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'code[0]'. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'digsel[1]'. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'digctrl[0]'. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[1]'. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/juanj/Desktop/REPOSITORIO SED/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 739.250 ; gain = 1.027
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 739.250 ; gain = 466.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 739.250 ; gain = 466.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 739.250 ; gain = 466.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 739.250 ; gain = 466.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Display_refresh 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module Divisor 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[0]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[1]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[2]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[3]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[4]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[5]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[6]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[7]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[8]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[9]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[10]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[11]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[12]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[13]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[14]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[15]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[16]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[17]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[18]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[19]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[20]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[21]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[22]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[23]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[24]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[25]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[26]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[27]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[28]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[29]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3886] merging instance 'div/cuenta_reg[30]' (FD) to 'div/cuenta_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div/cuenta_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div/reloj_reg )
+WARNING: [Synth 8-3332] Sequential element (div/cuenta_reg[31]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (div/reloj_reg) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_selection_reg[3]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_selection_reg[2]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_selection_reg[1]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_selection_reg[0]) is unused and will be removed from module Display_refresh.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 739.250 ; gain = 466.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 767.180 ; gain = 493.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 767.180 ; gain = 493.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (display_actual_reg[1]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_actual_reg[0]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[6]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[5]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[4]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[3]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[2]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[1]) is unused and will be removed from module Display_refresh.
+WARNING: [Synth 8-3332] Sequential element (display_number_reg[0]) is unused and will be removed from module Display_refresh.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    11|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    11|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 776.715 ; gain = 190.992
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 776.715 ; gain = 503.523
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 21 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 791.109 ; gain = 531.191
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/juanj/Desktop/REPOSITORIO SED/Trabajo_V1.0/Trabajo_V1.0.runs/synth_1/Display_refresh.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Display_refresh_utilization_synth.rpt -pb Display_refresh_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 791.109 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 14 19:39:11 2018...
