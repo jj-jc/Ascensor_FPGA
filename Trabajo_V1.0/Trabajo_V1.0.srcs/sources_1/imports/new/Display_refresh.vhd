@@ -50,8 +50,6 @@ architecture Behavioral of Display_refresh is
 SIGNAL reloj:STD_LOGIC;
 --signal S_display_selection: std_logic_vector (3 downto 0):="0001";
 signal display_actual: unsigned(1 downto 0):="00";
-signal decenas:std_logic_vector(6 downto 0):="1001100";
---signal unidades:std_logic_vector(6 downto 0):="0010010";
 begin
 --display_selection <= S_display_selection;
   process(clk,reset)--capturamos los flancos y aumentamos en uno el display --Falta reset
@@ -63,12 +61,11 @@ begin
     elsif (clk'event and clk='1') then
     if display_actual ="00" then 
                display_selection <= "11111110";
-    --              --display_number <= Segment_unid;
+
                  display_number <= segment_unid;
      elsif display_actual ="01" then 
-                display_selection <= "11111101";
-     --              --display_number <= Segment_unid;
-                  display_number <= decenas;
+                display_selection <= "11111101";              
+                display_number <= segment_dec;
      else 
                 display_selection <= "11110111";
                 display_number <= (others =>'1');

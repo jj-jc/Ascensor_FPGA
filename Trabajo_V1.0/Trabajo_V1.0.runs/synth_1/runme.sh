@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/user/Documents/JULIA/EE403/SED/Trabajogit/trabajosed/Trabajo_V1.0/Trabajo_V1.0.runs/synth_1'
+HD_PWD='C:/Users/user/Desktop/Prueba/Trabajo_V1.0.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Num_un_dec.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Num_un_dec.tcl
+EAStep vivado -log Mostrar_tiempo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mostrar_tiempo.tcl
